@@ -153,6 +153,17 @@ export default function HomePage() {
             {state.streak}일 연속 참여 중!
           </span>
         </div>
+
+        {/* Playground Button */}
+        <motion.button
+          onClick={() => router.push("/playground")}
+          className="w-full mt-3 py-2.5 rounded-xl text-sm font-medium
+            bg-white/50 text-slate-600 flex items-center justify-center gap-2"
+          whileHover={{ backgroundColor: "rgba(255,255,255,0.7)" }}
+          whileTap={{ scale: 0.97 }}
+        >
+          <span>🌿</span> {animal.name}와 놀아주기
+        </motion.button>
       </motion.div>
 
       {/* Alarm & Sleep Card */}
